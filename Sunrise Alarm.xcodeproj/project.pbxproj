@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7957A66D1405B015003AE84B /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7957A66C1405B015003AE84B /* TimeViewController.m */; };
+		7957A66F1405B80F003AE84B /* TimeViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7957A66E1405B80F003AE84B /* TimeViewController_iPhone.xib */; };
+		7957A6721405BAF9003AE84B /* TimePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7957A6711405BAF9003AE84B /* TimePickerViewController.m */; };
+		7957A6771405CEC2003AE84B /* TimeViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7957A6761405CEC2003AE84B /* TimeViewController_iPad.xib */; };
+		7957A6791405DFA0003AE84B /* baby_crying.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7957A6781405DFA0003AE84B /* baby_crying.wav */; };
+		7957A67B1405F3C8003AE84B /* Icon-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7957A67A1405F3C8003AE84B /* Icon-iPad.png */; };
+		797D31051401CA9500F4A007 /* Clock.m in Sources */ = {isa = PBXBuildFile; fileRef = 797D31041401CA9500F4A007 /* Clock.m */; };
+		797D310A14020FDE00F4A007 /* HTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 797D310714020FDD00F4A007 /* HTTPFetcher.m */; };
+		797D310B14020FDE00F4A007 /* ScannerCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 797D310914020FDE00F4A007 /* ScannerCategory.m */; };
+		797D310E140212F600F4A007 /* YahooWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = 797D310D140212F500F4A007 /* YahooWeather.m */; };
+		797D311814021B9200F4A007 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797D311714021B9200F4A007 /* CoreLocation.framework */; };
+		797D311B1402279B00F4A007 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 797D311A1402279A00F4A007 /* XMLReader.m */; };
+		798E5DE51402B8F400839F96 /* ClockViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 798E5DE41402B8F400839F96 /* ClockViewController_iPad.xib */; };
+		79A8FB6F14008CB60011D08C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A8FB6E14008CB60011D08C /* UIKit.framework */; };
+		79A8FB7114008CB60011D08C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A8FB7014008CB60011D08C /* Foundation.framework */; };
+		79A8FB7314008CB60011D08C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A8FB7214008CB60011D08C /* CoreGraphics.framework */; };
+		79A8FB7914008CB60011D08C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79A8FB7714008CB60011D08C /* InfoPlist.strings */; };
+		79A8FB7C14008CB60011D08C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A8FB7B14008CB60011D08C /* main.m */; };
+		79A8FB7F14008CB60011D08C /* Sunrise_AlarmAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A8FB7E14008CB60011D08C /* Sunrise_AlarmAppDelegate.m */; };
+		79A8FB8314008CB60011D08C /* Sunrise_AlarmAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A8FB8214008CB60011D08C /* Sunrise_AlarmAppDelegate_iPhone.m */; };
+		79A8FB8614008CB60011D08C /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79A8FB8414008CB60011D08C /* MainWindow_iPhone.xib */; };
+		79A8FB8A14008CB60011D08C /* Sunrise_AlarmAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A8FB8914008CB60011D08C /* Sunrise_AlarmAppDelegate_iPad.m */; };
+		79A8FB8D14008CB60011D08C /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79A8FB8B14008CB60011D08C /* MainWindow_iPad.xib */; };
+		79A8FB9414008CB60011D08C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A8FB6E14008CB60011D08C /* UIKit.framework */; };
+		79A8FB9514008CB60011D08C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A8FB7014008CB60011D08C /* Foundation.framework */; };
+		79A8FB9614008CB60011D08C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A8FB7214008CB60011D08C /* CoreGraphics.framework */; };
+		79A8FB9E14008CB60011D08C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79A8FB9C14008CB60011D08C /* InfoPlist.strings */; };
+		79A8FBA114008CB60011D08C /* Sunrise_AlarmTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 79A8FBA014008CB60011D08C /* Sunrise_AlarmTests.h */; };
+		79A8FBA314008CB60011D08C /* Sunrise_AlarmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A8FBA214008CB60011D08C /* Sunrise_AlarmTests.m */; };
+		79A8FBC61401780D0011D08C /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A8FBC51401780D0011D08C /* ClockViewController.m */; };
+		79A8FBC9140178660011D08C /* ClockViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A8FBC8140178660011D08C /* ClockViewController_iPhone.m */; };
+		79A8FBCC140178960011D08C /* ClockViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A8FBCB140178960011D08C /* ClockViewController_iPad.m */; };
+		79A8FBD2140179440011D08C /* clock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A8FBCD140179440011D08C /* clock@2x.png */; };
+		79A8FBD3140179440011D08C /* preferences.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A8FBCE140179440011D08C /* preferences.png */; };
+		79A8FBD4140179440011D08C /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A8FBCF140179440011D08C /* clock.png */; };
+		79A8FBD5140179440011D08C /* LED.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79A8FBD0140179440011D08C /* LED.ttf */; };
+		79A8FBD6140179440011D08C /* preferences@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A8FBD1140179440011D08C /* preferences@2x.png */; };
+		79A8FBD914017EEC0011D08C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A8FBD814017EEB0011D08C /* SettingsViewController.m */; };
+		79A8FBE914017FD80011D08C /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A8FBDC14017FD60011D08C /* Settings.m */; };
+		79A8FBEA14017FD80011D08C /* RepeatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A8FBDF14017FD60011D08C /* RepeatViewController.m */; };
+		79A8FBEB14017FD80011D08C /* SnoozeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A8FBE214017FD70011D08C /* SnoozeViewController.m */; };
+		79A8FBEC14017FD80011D08C /* SoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A8FBE314017FD70011D08C /* SoundViewController.m */; };
+		79A8FBED14017FD80011D08C /* TimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A8FBE414017FD70011D08C /* TimeTableViewController.m */; };
+		79A8FBEE14017FD80011D08C /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A8FBE614017FD80011D08C /* SettingsTableViewController.m */; };
+		79A8FBF2140180050011D08C /* SettingsTableViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79A8FBF1140180050011D08C /* SettingsTableViewController_iPhone.xib */; };
+		79A8FBF8140189B80011D08C /* SettingsViewController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A8FBF7140189B80011D08C /* SettingsViewController_iPhone.m */; };
+		79A8FBFA14018BC10011D08C /* SettingsTableViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79A8FBF914018BC00011D08C /* SettingsTableViewController_iPad.xib */; };
+		79A8FBFD14018DDD0011D08C /* SettingsViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A8FBFC14018DDD0011D08C /* SettingsViewController_iPad.m */; };
+		79A8FC0A1401947A0011D08C /* ClockViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79A8FC091401947A0011D08C /* ClockViewController_iPhone.xib */; };
+		79B42C9A140302CF00E18817 /* sunriset_include in Sources */ = {isa = PBXBuildFile; fileRef = 79B42C99140302CF00E18817 /* sunriset_include */; };
+		79B42C9D140304C900E18817 /* Scheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B42C9C140304C900E18817 /* Scheduler.m */; };
+		79B42CAF14041F3500E18817 /* Guifxv2Transports.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79B42CAE14041F3500E18817 /* Guifxv2Transports.ttf */; };
+		79B42CB21404472100E18817 /* Alarm.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B42CB11404471F00E18817 /* Alarm.m */; };
+		79B42CBC14045A4600E18817 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B42CBB14045A4500E18817 /* AVFoundation.framework */; };
+		79B42CBE140464C300E18817 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B42CBD140464C200E18817 /* AudioToolbox.framework */; };
+		79B42CC3140465A400E18817 /* alarm_clock_ringing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 79B42CBF140465A300E18817 /* alarm_clock_ringing.wav */; };
+		79B42CC4140465A400E18817 /* card_reader_alarm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 79B42CC0140465A300E18817 /* card_reader_alarm.wav */; };
+		79B42CC5140465A400E18817 /* church_bells.wav in Resources */ = {isa = PBXBuildFile; fileRef = 79B42CC1140465A300E18817 /* church_bells.wav */; };
+		79B42CC6140465A400E18817 /* police.wav in Resources */ = {isa = PBXBuildFile; fileRef = 79B42CC2140465A300E18817 /* police.wav */; };
+		79B42CCA1404864B00E18817 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B42CC81404864A00E18817 /* Icon@2x.png */; };
+		79B42CCB1404864B00E18817 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B42CC91404864A00E18817 /* Icon.png */; };
+		79B42CCE14048B4400E18817 /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B42CCD14048B4200E18817 /* AlarmViewController.m */; };
+		79B42CD014048BC500E18817 /* AlarmViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B42CCF14048BC500E18817 /* AlarmViewController_iPhone.xib */; };
+		79B42CE21404938300E18817 /* green-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B42CDE1404938200E18817 /* green-highlight.png */; };
+		79B42CE31404938300E18817 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B42CDF1404938200E18817 /* green.png */; };
+		79B42CE41404938300E18817 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B42CE01404938200E18817 /* red.png */; };
+		79B42CE51404938300E18817 /* red-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B42CE11404938300E18817 /* red-highlight.png */; };
+		79B42CE71404A13D00E18817 /* AlarmViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79B42CE61404A13D00E18817 /* AlarmViewController_iPad.xib */; };
+		79B42CF41404A3C600E18817 /* green-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B42CF01404A3C400E18817 /* green-iPad.png */; };
+		79B42CF51404A3C600E18817 /* green-iPad-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B42CF11404A3C500E18817 /* green-iPad-highlight.png */; };
+		79B42CF61404A3C600E18817 /* red-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B42CF21404A3C500E18817 /* red-iPad.png */; };
+		79B42CF71404A3C600E18817 /* red-iPad-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 79B42CF31404A3C600E18817 /* red-iPad-highlight.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79A8FB9714008CB60011D08C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79A8FB6114008CB60011D08C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79A8FB6914008CB60011D08C;
+			remoteInfo = "Sunrise Alarm";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		79379B8B145D47D800927F05 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		79379B8C145D47D800927F05 /* Icon-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad.png"; sourceTree = "<group>"; };
+		79379B8D145D47D800927F05 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		7957A66B1405B015003AE84B /* TimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeViewController.h; sourceTree = "<group>"; };
+		7957A66C1405B015003AE84B /* TimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeViewController.m; sourceTree = "<group>"; };
+		7957A66E1405B80F003AE84B /* TimeViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeViewController_iPhone.xib; sourceTree = "<group>"; };
+		7957A6701405BAF8003AE84B /* TimePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimePickerViewController.h; sourceTree = "<group>"; };
+		7957A6711405BAF9003AE84B /* TimePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimePickerViewController.m; sourceTree = "<group>"; };
+		7957A6761405CEC2003AE84B /* TimeViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeViewController_iPad.xib; sourceTree = "<group>"; };
+		7957A6781405DFA0003AE84B /* baby_crying.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = baby_crying.wav; sourceTree = "<group>"; };
+		7957A67A1405F3C8003AE84B /* Icon-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad.png"; sourceTree = "<group>"; };
+		797D31031401CA9500F4A007 /* Clock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clock.h; sourceTree = "<group>"; };
+		797D31041401CA9500F4A007 /* Clock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clock.m; sourceTree = "<group>"; };
+		797D310614020FDD00F4A007 /* HTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPFetcher.h; sourceTree = "<group>"; };
+		797D310714020FDD00F4A007 /* HTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPFetcher.m; sourceTree = "<group>"; };
+		797D310814020FDE00F4A007 /* ScannerCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScannerCategory.h; sourceTree = "<group>"; };
+		797D310914020FDE00F4A007 /* ScannerCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScannerCategory.m; sourceTree = "<group>"; };
+		797D310C140212F500F4A007 /* YahooWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YahooWeather.h; sourceTree = "<group>"; };
+		797D310D140212F500F4A007 /* YahooWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YahooWeather.m; sourceTree = "<group>"; };
+		797D311714021B9200F4A007 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		797D31191402279A00F4A007 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		797D311A1402279A00F4A007 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		798E5DE41402B8F400839F96 /* ClockViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClockViewController_iPad.xib; sourceTree = "<group>"; };
+		79A8FB6A14008CB60011D08C /* Sunrise Alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sunrise Alarm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79A8FB6E14008CB60011D08C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		79A8FB7014008CB60011D08C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		79A8FB7214008CB60011D08C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		79A8FB7614008CB60011D08C /* Sunrise Alarm-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sunrise Alarm-Info.plist"; sourceTree = "<group>"; };
+		79A8FB7814008CB60011D08C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79A8FB7A14008CB60011D08C /* Sunrise Alarm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sunrise Alarm-Prefix.pch"; sourceTree = "<group>"; };
+		79A8FB7B14008CB60011D08C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		79A8FB7D14008CB60011D08C /* Sunrise_AlarmAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sunrise_AlarmAppDelegate.h; sourceTree = "<group>"; };
+		79A8FB7E14008CB60011D08C /* Sunrise_AlarmAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sunrise_AlarmAppDelegate.m; sourceTree = "<group>"; };
+		79A8FB8114008CB60011D08C /* Sunrise_AlarmAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Sunrise_AlarmAppDelegate_iPhone.h; path = iPhone/Sunrise_AlarmAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		79A8FB8214008CB60011D08C /* Sunrise_AlarmAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Sunrise_AlarmAppDelegate_iPhone.m; path = iPhone/Sunrise_AlarmAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		79A8FB8514008CB60011D08C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		79A8FB8814008CB60011D08C /* Sunrise_AlarmAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Sunrise_AlarmAppDelegate_iPad.h; path = iPad/Sunrise_AlarmAppDelegate_iPad.h; sourceTree = "<group>"; };
+		79A8FB8914008CB60011D08C /* Sunrise_AlarmAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Sunrise_AlarmAppDelegate_iPad.m; path = iPad/Sunrise_AlarmAppDelegate_iPad.m; sourceTree = "<group>"; };
+		79A8FB8C14008CB60011D08C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		79A8FB9314008CB60011D08C /* Sunrise AlarmTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sunrise AlarmTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79A8FB9B14008CB60011D08C /* Sunrise AlarmTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sunrise AlarmTests-Info.plist"; sourceTree = "<group>"; };
+		79A8FB9D14008CB60011D08C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79A8FB9F14008CB60011D08C /* Sunrise AlarmTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sunrise AlarmTests-Prefix.pch"; sourceTree = "<group>"; };
+		79A8FBA014008CB60011D08C /* Sunrise_AlarmTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sunrise_AlarmTests.h; sourceTree = "<group>"; };
+		79A8FBA214008CB60011D08C /* Sunrise_AlarmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sunrise_AlarmTests.m; sourceTree = "<group>"; };
+		79A8FBC41401780D0011D08C /* ClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
+		79A8FBC51401780D0011D08C /* ClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
+		79A8FBC7140178660011D08C /* ClockViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockViewController_iPhone.h; sourceTree = "<group>"; };
+		79A8FBC8140178660011D08C /* ClockViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockViewController_iPhone.m; sourceTree = "<group>"; };
+		79A8FBCA140178960011D08C /* ClockViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockViewController_iPad.h; sourceTree = "<group>"; };
+		79A8FBCB140178960011D08C /* ClockViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockViewController_iPad.m; sourceTree = "<group>"; };
+		79A8FBCD140179440011D08C /* clock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock@2x.png"; sourceTree = "<group>"; };
+		79A8FBCE140179440011D08C /* preferences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preferences.png; sourceTree = "<group>"; };
+		79A8FBCF140179440011D08C /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		79A8FBD0140179440011D08C /* LED.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LED.ttf; sourceTree = "<group>"; };
+		79A8FBD1140179440011D08C /* preferences@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "preferences@2x.png"; sourceTree = "<group>"; };
+		79A8FBD814017EEB0011D08C /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		79A8FBDB14017FD60011D08C /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		79A8FBDC14017FD60011D08C /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		79A8FBDD14017FD60011D08C /* TimeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTableViewController.h; sourceTree = "<group>"; };
+		79A8FBDE14017FD60011D08C /* RepeatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepeatViewController.h; sourceTree = "<group>"; };
+		79A8FBDF14017FD60011D08C /* RepeatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepeatViewController.m; sourceTree = "<group>"; };
+		79A8FBE014017FD70011D08C /* SoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundViewController.h; sourceTree = "<group>"; };
+		79A8FBE114017FD70011D08C /* SnoozeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnoozeViewController.h; sourceTree = "<group>"; };
+		79A8FBE214017FD70011D08C /* SnoozeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnoozeViewController.m; sourceTree = "<group>"; };
+		79A8FBE314017FD70011D08C /* SoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundViewController.m; sourceTree = "<group>"; };
+		79A8FBE414017FD70011D08C /* TimeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTableViewController.m; sourceTree = "<group>"; };
+		79A8FBE514017FD80011D08C /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		79A8FBE614017FD80011D08C /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		79A8FBF014017FF30011D08C /* insist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = insist.h; sourceTree = "<group>"; };
+		79A8FBF1140180050011D08C /* SettingsTableViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsTableViewController_iPhone.xib; sourceTree = "<group>"; };
+		79A8FBF6140189B80011D08C /* SettingsViewController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController_iPhone.h; sourceTree = "<group>"; };
+		79A8FBF7140189B80011D08C /* SettingsViewController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController_iPhone.m; sourceTree = "<group>"; };
+		79A8FBF914018BC00011D08C /* SettingsTableViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsTableViewController_iPad.xib; sourceTree = "<group>"; };
+		79A8FBFB14018DDD0011D08C /* SettingsViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController_iPad.h; sourceTree = "<group>"; };
+		79A8FBFC14018DDD0011D08C /* SettingsViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController_iPad.m; sourceTree = "<group>"; };
+		79A8FC091401947A0011D08C /* ClockViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClockViewController_iPhone.xib; sourceTree = "<group>"; };
+		79B42C901402D84100E18817 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		79B42C99140302CF00E18817 /* sunriset_include */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sunriset_include; sourceTree = "<group>"; };
+		79B42C9B140304C900E18817 /* Scheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scheduler.h; sourceTree = "<group>"; };
+		79B42C9C140304C900E18817 /* Scheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scheduler.m; sourceTree = "<group>"; };
+		79B42CAE14041F3500E18817 /* Guifxv2Transports.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Guifxv2Transports.ttf; sourceTree = "<group>"; };
+		79B42CB01404471E00E18817 /* Alarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alarm.h; sourceTree = "<group>"; };
+		79B42CB11404471F00E18817 /* Alarm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alarm.m; sourceTree = "<group>"; };
+		79B42CBB14045A4500E18817 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		79B42CBD140464C200E18817 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		79B42CBF140465A300E18817 /* alarm_clock_ringing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alarm_clock_ringing.wav; sourceTree = "<group>"; };
+		79B42CC0140465A300E18817 /* card_reader_alarm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = card_reader_alarm.wav; sourceTree = "<group>"; };
+		79B42CC1140465A300E18817 /* church_bells.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = church_bells.wav; sourceTree = "<group>"; };
+		79B42CC2140465A300E18817 /* police.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = police.wav; sourceTree = "<group>"; };
+		79B42CC71404741300E18817 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		79B42CC81404864A00E18817 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		79B42CC91404864A00E18817 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		79B42CCC14048B4000E18817 /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
+		79B42CCD14048B4200E18817 /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
+		79B42CCF14048BC500E18817 /* AlarmViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmViewController_iPhone.xib; sourceTree = "<group>"; };
+		79B42CDE1404938200E18817 /* green-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green-highlight.png"; sourceTree = "<group>"; };
+		79B42CDF1404938200E18817 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
+		79B42CE01404938200E18817 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		79B42CE11404938300E18817 /* red-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-highlight.png"; sourceTree = "<group>"; };
+		79B42CE61404A13D00E18817 /* AlarmViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmViewController_iPad.xib; sourceTree = "<group>"; };
+		79B42CF01404A3C400E18817 /* green-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green-iPad.png"; sourceTree = "<group>"; };
+		79B42CF11404A3C500E18817 /* green-iPad-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green-iPad-highlight.png"; sourceTree = "<group>"; };
+		79B42CF21404A3C500E18817 /* red-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-iPad.png"; sourceTree = "<group>"; };
+		79B42CF31404A3C600E18817 /* red-iPad-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-iPad-highlight.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79A8FB6714008CB60011D08C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79B42CBE140464C300E18817 /* AudioToolbox.framework in Frameworks */,
+				79B42CBC14045A4600E18817 /* AVFoundation.framework in Frameworks */,
+				797D311814021B9200F4A007 /* CoreLocation.framework in Frameworks */,
+				79A8FB6F14008CB60011D08C /* UIKit.framework in Frameworks */,
+				79A8FB7114008CB60011D08C /* Foundation.framework in Frameworks */,
+				79A8FB7314008CB60011D08C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79A8FB8F14008CB60011D08C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79A8FB9414008CB60011D08C /* UIKit.framework in Frameworks */,
+				79A8FB9514008CB60011D08C /* Foundation.framework in Frameworks */,
+				79A8FB9614008CB60011D08C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79A8FB5F14008CB60011D08C = {
+			isa = PBXGroup;
+			children = (
+				79B42CBD140464C200E18817 /* AudioToolbox.framework */,
+				79B42CBB14045A4500E18817 /* AVFoundation.framework */,
+				797D311714021B9200F4A007 /* CoreLocation.framework */,
+				79A8FB7414008CB60011D08C /* Sunrise Alarm */,
+				79A8FB9914008CB60011D08C /* Sunrise AlarmTests */,
+				79A8FB6D14008CB60011D08C /* Frameworks */,
+				79A8FB6B14008CB60011D08C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79A8FB6B14008CB60011D08C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79A8FB6A14008CB60011D08C /* Sunrise Alarm.app */,
+				79A8FB9314008CB60011D08C /* Sunrise AlarmTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79A8FB6D14008CB60011D08C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79A8FB6E14008CB60011D08C /* UIKit.framework */,
+				79A8FB7014008CB60011D08C /* Foundation.framework */,
+				79A8FB7214008CB60011D08C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79A8FB7414008CB60011D08C /* Sunrise Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				79A8FB7D14008CB60011D08C /* Sunrise_AlarmAppDelegate.h */,
+				79A8FB7E14008CB60011D08C /* Sunrise_AlarmAppDelegate.m */,
+				79B42C901402D84100E18817 /* Global.h */,
+				79A8FBC41401780D0011D08C /* ClockViewController.h */,
+				79A8FBC51401780D0011D08C /* ClockViewController.m */,
+				797D310614020FDD00F4A007 /* HTTPFetcher.h */,
+				797D310714020FDD00F4A007 /* HTTPFetcher.m */,
+				79B42CB01404471E00E18817 /* Alarm.h */,
+				79B42CB11404471F00E18817 /* Alarm.m */,
+				797D310814020FDE00F4A007 /* ScannerCategory.h */,
+				797D310914020FDE00F4A007 /* ScannerCategory.m */,
+				79379B8B145D47D800927F05 /* Icon.png */,
+				79379B8C145D47D800927F05 /* Icon-iPad.png */,
+				79379B8D145D47D800927F05 /* Icon@2x.png */,
+				797D311A1402279A00F4A007 /* XMLReader.m */,
+				797D31191402279A00F4A007 /* XMLReader.h */,
+				79B42CCC14048B4000E18817 /* AlarmViewController.h */,
+				79B42CCD14048B4200E18817 /* AlarmViewController.m */,
+				797D310C140212F500F4A007 /* YahooWeather.h */,
+				797D310D140212F500F4A007 /* YahooWeather.m */,
+				79B42C9C140304C900E18817 /* Scheduler.m */,
+				79B42C9B140304C900E18817 /* Scheduler.h */,
+				79B42CC71404741300E18817 /* SettingsViewController.h */,
+				79A8FBD814017EEB0011D08C /* SettingsViewController.m */,
+				79A8FBDC14017FD60011D08C /* Settings.m */,
+				79A8FBDB14017FD60011D08C /* Settings.h */,
+				79B42C99140302CF00E18817 /* sunriset_include */,
+				797D31031401CA9500F4A007 /* Clock.h */,
+				797D31041401CA9500F4A007 /* Clock.m */,
+				7957A66B1405B015003AE84B /* TimeViewController.h */,
+				7957A66C1405B015003AE84B /* TimeViewController.m */,
+				79A8FBDD14017FD60011D08C /* TimeTableViewController.h */,
+				7957A6701405BAF8003AE84B /* TimePickerViewController.h */,
+				7957A6711405BAF9003AE84B /* TimePickerViewController.m */,
+				79A8FBE414017FD70011D08C /* TimeTableViewController.m */,
+				79A8FBDE14017FD60011D08C /* RepeatViewController.h */,
+				79A8FBDF14017FD60011D08C /* RepeatViewController.m */,
+				79A8FBF014017FF30011D08C /* insist.h */,
+				79A8FBE014017FD70011D08C /* SoundViewController.h */,
+				79A8FBE114017FD70011D08C /* SnoozeViewController.h */,
+				79A8FBE214017FD70011D08C /* SnoozeViewController.m */,
+				79A8FBE314017FD70011D08C /* SoundViewController.m */,
+				79A8FBE514017FD80011D08C /* SettingsTableViewController.h */,
+				79A8FBE614017FD80011D08C /* SettingsTableViewController.m */,
+				79A8FB8014008CB60011D08C /* iPhone */,
+				79A8FB8714008CB60011D08C /* iPad */,
+				79A8FB7514008CB60011D08C /* Supporting Files */,
+			);
+			path = "Sunrise Alarm";
+			sourceTree = "<group>";
+		};
+		79A8FB7514008CB60011D08C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79B42CAE14041F3500E18817 /* Guifxv2Transports.ttf */,
+				79B42CF01404A3C400E18817 /* green-iPad.png */,
+				79B42CF11404A3C500E18817 /* green-iPad-highlight.png */,
+				79B42CF21404A3C500E18817 /* red-iPad.png */,
+				79B42CF31404A3C600E18817 /* red-iPad-highlight.png */,
+				79A8FB7614008CB60011D08C /* Sunrise Alarm-Info.plist */,
+				79B42CC81404864A00E18817 /* Icon@2x.png */,
+				79B42CC91404864A00E18817 /* Icon.png */,
+				79A8FB7714008CB60011D08C /* InfoPlist.strings */,
+				79A8FB7A14008CB60011D08C /* Sunrise Alarm-Prefix.pch */,
+				79B42CBF140465A300E18817 /* alarm_clock_ringing.wav */,
+				7957A67A1405F3C8003AE84B /* Icon-iPad.png */,
+				79B42CC0140465A300E18817 /* card_reader_alarm.wav */,
+				79B42CDE1404938200E18817 /* green-highlight.png */,
+				79B42CDF1404938200E18817 /* green.png */,
+				79B42CE01404938200E18817 /* red.png */,
+				79B42CE11404938300E18817 /* red-highlight.png */,
+				7957A6781405DFA0003AE84B /* baby_crying.wav */,
+				79B42CC1140465A300E18817 /* church_bells.wav */,
+				79B42CC2140465A300E18817 /* police.wav */,
+				79A8FBCD140179440011D08C /* clock@2x.png */,
+				79A8FBCE140179440011D08C /* preferences.png */,
+				79A8FBCF140179440011D08C /* clock.png */,
+				79A8FBD0140179440011D08C /* LED.ttf */,
+				79A8FBD1140179440011D08C /* preferences@2x.png */,
+				79A8FB7B14008CB60011D08C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79A8FB8014008CB60011D08C /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				79A8FB8114008CB60011D08C /* Sunrise_AlarmAppDelegate_iPhone.h */,
+				79A8FB8214008CB60011D08C /* Sunrise_AlarmAppDelegate_iPhone.m */,
+				79A8FBC7140178660011D08C /* ClockViewController_iPhone.h */,
+				79B42CCF14048BC500E18817 /* AlarmViewController_iPhone.xib */,
+				7957A66E1405B80F003AE84B /* TimeViewController_iPhone.xib */,
+				79A8FBC8140178660011D08C /* ClockViewController_iPhone.m */,
+				79A8FBF6140189B80011D08C /* SettingsViewController_iPhone.h */,
+				79A8FBF7140189B80011D08C /* SettingsViewController_iPhone.m */,
+				79A8FBF1140180050011D08C /* SettingsTableViewController_iPhone.xib */,
+				79A8FB8414008CB60011D08C /* MainWindow_iPhone.xib */,
+				79A8FC091401947A0011D08C /* ClockViewController_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		79A8FB8714008CB60011D08C /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				79A8FB8814008CB60011D08C /* Sunrise_AlarmAppDelegate_iPad.h */,
+				79A8FB8914008CB60011D08C /* Sunrise_AlarmAppDelegate_iPad.m */,
+				79B42CE61404A13D00E18817 /* AlarmViewController_iPad.xib */,
+				79A8FBCA140178960011D08C /* ClockViewController_iPad.h */,
+				79A8FBCB140178960011D08C /* ClockViewController_iPad.m */,
+				79A8FBFB14018DDD0011D08C /* SettingsViewController_iPad.h */,
+				7957A6761405CEC2003AE84B /* TimeViewController_iPad.xib */,
+				79A8FBFC14018DDD0011D08C /* SettingsViewController_iPad.m */,
+				79A8FBF914018BC00011D08C /* SettingsTableViewController_iPad.xib */,
+				79A8FB8B14008CB60011D08C /* MainWindow_iPad.xib */,
+				798E5DE41402B8F400839F96 /* ClockViewController_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		79A8FB9914008CB60011D08C /* Sunrise AlarmTests */ = {
+			isa = PBXGroup;
+			children = (
+				79A8FBA014008CB60011D08C /* Sunrise_AlarmTests.h */,
+				79A8FBA214008CB60011D08C /* Sunrise_AlarmTests.m */,
+				79A8FB9A14008CB60011D08C /* Supporting Files */,
+			);
+			path = "Sunrise AlarmTests";
+			sourceTree = "<group>";
+		};
+		79A8FB9A14008CB60011D08C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79A8FB9B14008CB60011D08C /* Sunrise AlarmTests-Info.plist */,
+				79A8FB9C14008CB60011D08C /* InfoPlist.strings */,
+				79A8FB9F14008CB60011D08C /* Sunrise AlarmTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79A8FB6914008CB60011D08C /* Sunrise Alarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79A8FBA614008CB70011D08C /* Build configuration list for PBXNativeTarget "Sunrise Alarm" */;
+			buildPhases = (
+				79A8FB6614008CB60011D08C /* Sources */,
+				79A8FB6714008CB60011D08C /* Frameworks */,
+				79A8FB6814008CB60011D08C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sunrise Alarm";
+			productName = "Sunrise Alarm";
+			productReference = 79A8FB6A14008CB60011D08C /* Sunrise Alarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79A8FB9214008CB60011D08C /* Sunrise AlarmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79A8FBA914008CB70011D08C /* Build configuration list for PBXNativeTarget "Sunrise AlarmTests" */;
+			buildPhases = (
+				79A8FB8E14008CB60011D08C /* Sources */,
+				79A8FB8F14008CB60011D08C /* Frameworks */,
+				79A8FB9014008CB60011D08C /* Resources */,
+				79A8FB9114008CB60011D08C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79A8FB9814008CB60011D08C /* PBXTargetDependency */,
+			);
+			name = "Sunrise AlarmTests";
+			productName = "Sunrise AlarmTests";
+			productReference = 79A8FB9314008CB60011D08C /* Sunrise AlarmTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79A8FB6114008CB60011D08C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 79A8FB6414008CB60011D08C /* Build configuration list for PBXProject "Sunrise Alarm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 79A8FB5F14008CB60011D08C;
+			productRefGroup = 79A8FB6B14008CB60011D08C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79A8FB6914008CB60011D08C /* Sunrise Alarm */,
+				79A8FB9214008CB60011D08C /* Sunrise AlarmTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79A8FB6814008CB60011D08C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79A8FB7914008CB60011D08C /* InfoPlist.strings in Resources */,
+				79A8FB8614008CB60011D08C /* MainWindow_iPhone.xib in Resources */,
+				79A8FB8D14008CB60011D08C /* MainWindow_iPad.xib in Resources */,
+				79A8FBD2140179440011D08C /* clock@2x.png in Resources */,
+				79A8FBD3140179440011D08C /* preferences.png in Resources */,
+				79A8FBD4140179440011D08C /* clock.png in Resources */,
+				79A8FBD5140179440011D08C /* LED.ttf in Resources */,
+				79A8FBD6140179440011D08C /* preferences@2x.png in Resources */,
+				79A8FBF2140180050011D08C /* SettingsTableViewController_iPhone.xib in Resources */,
+				79A8FBFA14018BC10011D08C /* SettingsTableViewController_iPad.xib in Resources */,
+				79A8FC0A1401947A0011D08C /* ClockViewController_iPhone.xib in Resources */,
+				798E5DE51402B8F400839F96 /* ClockViewController_iPad.xib in Resources */,
+				79B42CAF14041F3500E18817 /* Guifxv2Transports.ttf in Resources */,
+				79B42CC3140465A400E18817 /* alarm_clock_ringing.wav in Resources */,
+				79B42CC4140465A400E18817 /* card_reader_alarm.wav in Resources */,
+				79B42CC5140465A400E18817 /* church_bells.wav in Resources */,
+				79B42CC6140465A400E18817 /* police.wav in Resources */,
+				79B42CCA1404864B00E18817 /* Icon@2x.png in Resources */,
+				79B42CCB1404864B00E18817 /* Icon.png in Resources */,
+				79B42CD014048BC500E18817 /* AlarmViewController_iPhone.xib in Resources */,
+				79B42CE21404938300E18817 /* green-highlight.png in Resources */,
+				79B42CE31404938300E18817 /* green.png in Resources */,
+				79B42CE41404938300E18817 /* red.png in Resources */,
+				79B42CE51404938300E18817 /* red-highlight.png in Resources */,
+				79B42CE71404A13D00E18817 /* AlarmViewController_iPad.xib in Resources */,
+				79B42CF41404A3C600E18817 /* green-iPad.png in Resources */,
+				79B42CF51404A3C600E18817 /* green-iPad-highlight.png in Resources */,
+				79B42CF61404A3C600E18817 /* red-iPad.png in Resources */,
+				79B42CF71404A3C600E18817 /* red-iPad-highlight.png in Resources */,
+				7957A66F1405B80F003AE84B /* TimeViewController_iPhone.xib in Resources */,
+				7957A6771405CEC2003AE84B /* TimeViewController_iPad.xib in Resources */,
+				7957A6791405DFA0003AE84B /* baby_crying.wav in Resources */,
+				7957A67B1405F3C8003AE84B /* Icon-iPad.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79A8FB9014008CB60011D08C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79A8FB9E14008CB60011D08C /* InfoPlist.strings in Resources */,
+				79A8FBA114008CB60011D08C /* Sunrise_AlarmTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79A8FB9114008CB60011D08C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79A8FB6614008CB60011D08C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79A8FB7C14008CB60011D08C /* main.m in Sources */,
+				79A8FB7F14008CB60011D08C /* Sunrise_AlarmAppDelegate.m in Sources */,
+				79A8FB8314008CB60011D08C /* Sunrise_AlarmAppDelegate_iPhone.m in Sources */,
+				79A8FB8A14008CB60011D08C /* Sunrise_AlarmAppDelegate_iPad.m in Sources */,
+				79A8FBC61401780D0011D08C /* ClockViewController.m in Sources */,
+				79A8FBC9140178660011D08C /* ClockViewController_iPhone.m in Sources */,
+				79A8FBCC140178960011D08C /* ClockViewController_iPad.m in Sources */,
+				79A8FBD914017EEC0011D08C /* SettingsViewController.m in Sources */,
+				79A8FBE914017FD80011D08C /* Settings.m in Sources */,
+				79A8FBEA14017FD80011D08C /* RepeatViewController.m in Sources */,
+				79A8FBEB14017FD80011D08C /* SnoozeViewController.m in Sources */,
+				79A8FBEC14017FD80011D08C /* SoundViewController.m in Sources */,
+				79A8FBED14017FD80011D08C /* TimeTableViewController.m in Sources */,
+				79A8FBEE14017FD80011D08C /* SettingsTableViewController.m in Sources */,
+				79A8FBF8140189B80011D08C /* SettingsViewController_iPhone.m in Sources */,
+				79A8FBFD14018DDD0011D08C /* SettingsViewController_iPad.m in Sources */,
+				797D31051401CA9500F4A007 /* Clock.m in Sources */,
+				797D310A14020FDE00F4A007 /* HTTPFetcher.m in Sources */,
+				797D310B14020FDE00F4A007 /* ScannerCategory.m in Sources */,
+				797D310E140212F600F4A007 /* YahooWeather.m in Sources */,
+				797D311B1402279B00F4A007 /* XMLReader.m in Sources */,
+				79B42C9A140302CF00E18817 /* sunriset_include in Sources */,
+				79B42C9D140304C900E18817 /* Scheduler.m in Sources */,
+				79B42CB21404472100E18817 /* Alarm.m in Sources */,
+				79B42CCE14048B4400E18817 /* AlarmViewController.m in Sources */,
+				7957A66D1405B015003AE84B /* TimeViewController.m in Sources */,
+				7957A6721405BAF9003AE84B /* TimePickerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79A8FB8E14008CB60011D08C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79A8FBA314008CB60011D08C /* Sunrise_AlarmTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79A8FB9814008CB60011D08C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79A8FB6914008CB60011D08C /* Sunrise Alarm */;
+			targetProxy = 79A8FB9714008CB60011D08C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79A8FB7714008CB60011D08C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79A8FB7814008CB60011D08C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		79A8FB8414008CB60011D08C /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79A8FB8514008CB60011D08C /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		79A8FB8B14008CB60011D08C /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79A8FB8C14008CB60011D08C /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+		79A8FB9C14008CB60011D08C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79A8FB9D14008CB60011D08C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79A8FBA414008CB60011D08C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: david finucane (Z6R4YC8XL3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PROVISIONING_PROFILE = "EBBBF371-C28C-4365-BEE4-EB5125F22F0D";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79A8FBA514008CB60011D08C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: david finucane (Z6R4YC8XL3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "EBBBF371-C28C-4365-BEE4-EB5125F22F0D";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79A8FBA714008CB70011D08C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: david finucane (Z6R4YC8XL3)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sunrise Alarm/Sunrise Alarm-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Sunrise Alarm/Sunrise Alarm-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		79A8FBAA14008CB70011D08C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sunrise Alarm.app/Sunrise Alarm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sunrise AlarmTests/Sunrise AlarmTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Sunrise AlarmTests/Sunrise AlarmTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		79A8FBAB14008CB70011D08C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sunrise Alarm.app/Sunrise Alarm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sunrise AlarmTests/Sunrise AlarmTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Sunrise AlarmTests/Sunrise AlarmTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79A8FB6414008CB60011D08C /* Build configuration list for PBXProject "Sunrise Alarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79A8FBA414008CB60011D08C /* Debug */,
+				79A8FBA514008CB60011D08C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79A8FBA614008CB70011D08C /* Build configuration list for PBXNativeTarget "Sunrise Alarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79A8FBA714008CB70011D08C /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79A8FBA914008CB70011D08C /* Build configuration list for PBXNativeTarget "Sunrise AlarmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79A8FBAA14008CB70011D08C /* Debug */,
+				79A8FBAB14008CB70011D08C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79A8FB6114008CB60011D08C /* Project object */;
+}
